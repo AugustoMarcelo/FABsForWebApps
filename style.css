@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* Cor de background do FAB principal */
+/* Cor da borda do FAB principal */
+/* Cor dos ├¡cones dos FABs */
+/* Cor do background dos FABs secund├írios */
+a.fab-primary {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 64px;
+  height: 64px;
+  background-color: #536DFE;
+  border: 2px solid #536DFE;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  transition: .3s;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  a.fab-primary .fa {
+    font-size: 36px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFF9C4; }
+  a.fab-primary.active {
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.2);
+    transform: rotate(135deg); }
+
+a.fab-option {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  background-color: #FBC02D;
+  border-radius: 50%;
+  transition: .5s;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; }
+  a.fab-option .fa {
+    display: block;
+    text-align: center;
+    line-height: 52px;
+    font-size: 24px;
+    color: #FFF9C4;
+    transition: .5s; }
+  a.fab-option.active:hover {
+    box-shadow: none; }
+  a.fab-option:hover .fa {
+    transform: rotateY(360deg); }
+  a.fab-option.fab-option-1.active {
+    transform: translateY(-120px) rotate(360deg);
+    box-shadow: 0 7px 3px rgba(0, 0, 0, 0.3); }
+    a.fab-option.fab-option-1.active:hover {
+      box-shadow: none; }
+  a.fab-option.fab-option-2.active {
+    transform: translate(-100px, -100px) rotate(360deg);
+    box-shadow: 0 7px 3px rgba(0, 0, 0, 0.3); }
+    a.fab-option.fab-option-2.active:hover {
+      box-shadow: none; }
+  a.fab-option.fab-option-3.active {
+    transform: translateX(-120px) rotate(360deg);
+    box-shadow: 0 7px 3px rgba(0, 0, 0, 0.3); }
+    a.fab-option.fab-option-3.active:hover {
+      box-shadow: none; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: teal; }
+
+/*# sourceMappingURL=style.css.map */

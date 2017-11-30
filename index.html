@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>FABs com opções</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<a class="fab-primary">
+		<i class="fa fa-plus" aria-hidden="true"></i>
+	<a>
+	<a class="fab-option fab-option-1">
+		<i class="fa fa-clock-o" aria-hidden="true"></i>
+	<a>
+	<a class="fab-option fab-option-2">
+		<i class="fa fa-comments-o" aria-hidden="true"></i>
+	<a>
+	<a class="fab-option fab-option-3">
+		<i class="fa fa-trophy" aria-hidden="true"></i>
+	<a>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$(function() {
+			$('.fab-primary').click(function() {
+				$(this).toggleClass('active');
+				$('.fab-option').toggleClass('active');
+			});
+		});
+	</script>
+</body>
+</html>
